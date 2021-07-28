@@ -11,7 +11,11 @@ const db = require('./infra/sqlite-db');
 //Rotas
 const rotaFornecedores = require('./controllers/fornecedor-controller')
 
+//Middlewares
+app.use(express.json())
 
+
+//Uso de Rota
 rotaFornecedores(app,db)
 
 
