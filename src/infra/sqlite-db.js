@@ -7,7 +7,6 @@ const bd = new sqlite3.Database("./src/infra/database.db");
 process.on('SIGINT', () =>
     bd.close(() => {
         console.log('BD encerrado!');
-        console.log(bd)
         process.exit(0);
     })
 );

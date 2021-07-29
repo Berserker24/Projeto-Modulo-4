@@ -57,6 +57,21 @@ class FornecedoresDAO{
             })
         })
     }
+
+
+    AtualizaFornecedor(chave, valor, id){
+        return new Promise((resolve, reject) => {
+            this.db.get(`UPDATE FORNECEDORES SET ${chave} = (?) WHERE ID = (?)`, [valor, id], (err, rows)=>{
+                if(err)
+                {
+                    reject(err)
+                }
+                else{
+                    resolve()
+                }
+            })
+        })
+    }
 }
 
 module.exports = FornecedoresDAO;
