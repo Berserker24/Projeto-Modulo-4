@@ -34,7 +34,7 @@ module.exports = (app, db) => {
         }
     })
 
-    app.post('/Fornecedores', async (req,res)=>{
+    app.post('/Fornecedores/NovoFuncionario', async (req,res)=>{
         try{
             const corpo = req.body;
             let novoFornecedor = new ModelFornecedor(corpo.NOME, corpo.PRODUTO, corpo.EMAIL, corpo.CNPJ);
@@ -47,7 +47,7 @@ module.exports = (app, db) => {
         }
     })  
 
-    app.delete('/Fornecedores/:ID', async(req,res)=>{
+    app.delete('/Fornecedores/DeletaFuncionario/:ID', async(req,res)=>{
         try
         {
             const id = req.params.ID;
@@ -61,7 +61,7 @@ module.exports = (app, db) => {
     })
 
 
-    app.put('/Fornecedores/:ID', async (req,res)=>{
+    app.put('/Fornecedores/AtualizaFuncionario/:ID', async (req,res)=>{
         try{
             const id = req.params.ID;
             const corpo = req.body
