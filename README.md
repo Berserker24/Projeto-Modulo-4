@@ -23,6 +23,7 @@ O projeto foi feito utilizando Node.js, SQlite3 e Express, com o intuito de cria
 
 5. As rotas de acesso para os fornecedores são: <br>
 <br>
+
 GET: `http://localhost:3040/Fornecedores`<br> ***Serve para receber todo o banco de dados***<br>
 <br>
 
