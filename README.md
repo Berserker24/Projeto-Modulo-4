@@ -22,6 +22,7 @@ O projeto foi feito utilizando Node.js, SQlite3 e Express, com o intuito de cria
 `npm run dev`
 
 5. As rotas de acesso para os fornecedores são: <br>
+<br>
 GET: `http://localhost:3040/Fornecedores`<br> ***Serve para receber todo o banco de dados***<br>
 <br>
 
@@ -32,12 +33,12 @@ POST: `http://localhost:3040/Fornecedores/NovoFuncionario/` <br> ***Serve para c
 <br>
 
 Exemplo de POST: <br>
-`{<br>
-    "NOME": "Mega Mate",<br>
-    "PRODUTO": "Sobremesas",<br>
-    "EMAIL": "MegaDocesCTT@gmail.com",<br>
-    "CNPJ": "19384756171228"<br>
-}`<br>
+`{
+    "NOME": "Mega Mate",
+    "PRODUTO": "Sobremesas",
+    "EMAIL": "MegaDocesCTT@gmail.com",
+    "CNPJ": "19384756171228"
+}`
 
 
 DELETE:`http://localhost:3040/Fornecedores/DeletaFuncionario/:ID`<br> ***Serve para deletar um fornecedor por meio do ID(Substituir o ID desejado no fim do caminho)***<br>
@@ -48,9 +49,9 @@ PUT:`http://localhost:3040/Fornecedores/:ID` <br>
 <br>
 
 Exemplo de PUT:<br>
-{<br>
+{
 	"NOME" : "Super"
-}<br>
+}
 
 ### Técnologias Utilizadas:
 1. Node.js
